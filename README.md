@@ -1,7 +1,11 @@
-# 📊 mHub Excel Report Archiver
+# 📊 Excel Report Archiver
+
+> Automatically archives empty Excel reports from production folders into organized date-based directories.
+
+---
 
 ## 📌 Description
-The **mHub Excel Report Archiver** is a utility that automatically scans a production output folder to identify and archive empty Excel reports.
+The **Excel Report Archiver** is a utility that automatically scans a production output folder to identify and archive empty Excel reports.
 
 It specifically targets Excel files that are:
 - **5KB or smaller**
@@ -17,20 +21,25 @@ Instead of deleting these files, the tool safely moves them into a structured ar
    - 📅 **Date Modified** → Must be **yesterday**
    - 📦 **File Size** → Must be **≤ 5KB**
 3. Flags matching files for archiving  
-4. Moves them into a date-based archive folder:
+4. Moves them into a date-based archive folder
 
 ---
 
-🛡️ Safety Features
-🔒 Non-Destructive
+## 🛡️ Safety Features
 
-Files are moved, not deleted.
+### 🔒 Non-Destructive
+Files are **moved**, not deleted.
 
-🧠 Duplicate Protection
-
+### 🧠 Duplicate Protection
 If a file already exists in the archive:
+- A unique timestamp is appended to prevent overwriting
 
-A unique timestamp is appended to prevent overwriting
-🚫 Archive Exclusion
+### 🚫 Archive Exclusion
+The archive directory is automatically ignored during scanning to prevent re-processing.
 
-The archive directory is automatically ignored during scanning to prevent re-processing
+---
+
+## 📎 Notes
+- Designed for internal use
+- Safe to run on a daily basis
+- No files are permanently deleted
