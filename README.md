@@ -21,14 +21,6 @@ Instead of deleting these files, the tool safely moves them into a structured ar
 
 ---
 
-## 🚀 How to Run
-
-### ▶️ Option 1: Python Script
-```bash
-python excel_archiver.py
-
----
-
 🛡️ Safety Features
 🔒 Non-Destructive
 
