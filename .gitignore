@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# PyInstaller
+build/
+dist/
+*.spec
+*.toc
+*.pkg
+*.pyz
+
+# Executables
+*.exe
+
+# Archives
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
